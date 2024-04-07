@@ -1,0 +1,818 @@
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/rabbitmq.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'RabbitMQMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/notify.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'NotifyMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	NotifyMapper.InsertNotify (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	NotifyMapper.SelectAllNotify (interface {}) ([]*model.AppNotify, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/account.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/auth.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/default.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/fun.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/menu.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/org.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/role.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/system.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/tool.xml]
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'AccountMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.Register (model.User, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.IsRegister (model.User) (bool, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.SelectAccount (interface {}) (model.User, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'ToolMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetTool (interface {}) ([]*model.Tool, int64, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetToolRouterChild (interface {}) ([]*model.Router, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.UpdateTool (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.DeleteTool (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.CreateTool (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetToolRouter (interface {}) ([]*model.Router, int64, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.CheckTool (interface {}) (bool, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'OrgMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.AllOrg (interface {}) ([]*model.Org, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetDictionary () ([]*model.AppDictionary, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.DeleteOrg (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgChild (interface {}) ([]*model.Org, int64, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.CreateOrg (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgUserList (interface {}) ([]*model.User, int64, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.ExistUser (interface {}) (string, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.UpdateOrg (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.IsParentOrg (interface {}) ([]string, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgRoleList (interface {}) ([]*model.Role, int64, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'RoleMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.UpdateRole (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.CreateOrgRole (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.CreateRole (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.DeleteRole (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.GetRole (interface {}) ([]*model.Role, int64, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.AllRole (interface {}) ([]*model.Role, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'FunMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.UpdateFun (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.CreateFun (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.GetFun (interface {}) ([]*model.FunRouter, int64, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.DeleteFun (interface {}) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'AuthMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserTool (interface {}) ([]*model.Tool, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterUnAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectUserOrgList (interface {}) ([]*model.Org, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserToolMenu (interface {}) ([]*model.Router, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAllOrg () ([]*model.Org, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserMenu (interface {}) ([]*model.Router, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolUnAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DeleteOrgUserRoleAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectUserOrgRoleList (interface {}) ([]*model.Role, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgUserAuthTool (interface {}) ([]*model.Tool, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DelOrgUserRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthAllUserToolRouterPath (interface {}) ([]string, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgRoleToolAuth (interface {}) ([]string, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserToolMenuChild (interface {}) ([]*model.Router, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgRoleRouterAuth (interface {}) ([]string, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthAllUserRouterPath (interface {}) ([]string, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgUserAuthToolRouter (interface {}) ([]*model.Router, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolList (interface {}) ([]*model.Tool, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DelOrgUserRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterList (interface {}) ([]*model.Router, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'DefaultInfoMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserInfo (interface {}) (*model.User, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserDefaultRole (interface {}) (*model.Role, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserDefaultOrg (interface {}) (*model.Org, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SetUserDefaultRole (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SetUserDefaultOrg (interface {}, *sql.Tx) error
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'MenuMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	MenuMapper.SelectAllMenu () ([]*model.Router, error)
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'SystemMapper' mapping resolution
+2024-04-07 14:37:10	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	SystemMapper.AllUserList (interface {}) ([]*model.User, int64, error)
+2024-04-07 14:38:15	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select *
+        from app_router
+        order by sort;
+SQL Template ==> select *
+        from app_router
+        order by sort;
+Parameter: [] Count: (7), Time: 16.5448ms
+2024-04-07 14:38:15	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select *
+        from app_router
+        order by sort;
+SQL Template ==> select *
+        from app_router
+        order by sort;
+Parameter: [] Time: 17.2966ms
+2024-04-07 14:38:15	[35mDEBUG[0m	logger/gin.go:52	| 200 |      18.309ms |       127.0.0.1 | GET      "/menu" 
+2024-04-07 14:38:23	[35mDEBUG[0m	logger/gin.go:52	| 404 |            0s |       127.0.0.1 | POST     "/public/login" 
+2024-04-07 14:40:45	[31mERROR[0m	app/app.go:36	sync zap log error	{"error": "sync /dev/stdout: The handle is invalid."}
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/rabbitmq.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'RabbitMQMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/notify.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'NotifyMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	NotifyMapper.InsertNotify (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	NotifyMapper.SelectAllNotify (interface {}) ([]*model.AppNotify, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/account.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/auth.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/default.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/fun.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/menu.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/org.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/role.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/system.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/tool.xml]
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'AccountMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.SelectAccount (interface {}) (model.User, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.IsRegister (model.User) (bool, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.Register (model.User, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'ToolMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.UpdateTool (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetTool (interface {}) ([]*model.Tool, int64, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetToolRouterChild (interface {}) ([]*model.Router, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.CreateTool (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetToolRouter (interface {}) ([]*model.Router, int64, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.CheckTool (interface {}) (bool, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.DeleteTool (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'OrgMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.AllOrg (interface {}) ([]*model.Org, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetDictionary () ([]*model.AppDictionary, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.UpdateOrg (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.DeleteOrg (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgChild (interface {}) ([]*model.Org, int64, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.ExistUser (interface {}) (string, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgRoleList (interface {}) ([]*model.Role, int64, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.IsParentOrg (interface {}) ([]string, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgUserList (interface {}) ([]*model.User, int64, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.CreateOrg (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'RoleMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.UpdateRole (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.GetRole (interface {}) ([]*model.Role, int64, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.CreateOrgRole (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.CreateRole (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.AllRole (interface {}) ([]*model.Role, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.DeleteRole (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'FunMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.UpdateFun (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.CreateFun (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.DeleteFun (interface {}) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.GetFun (interface {}) ([]*model.FunRouter, int64, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'AuthMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserTool (interface {}) ([]*model.Tool, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectUserOrgList (interface {}) ([]*model.Org, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserToolMenu (interface {}) ([]*model.Router, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgUserAuthToolRouter (interface {}) ([]*model.Router, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectUserOrgRoleList (interface {}) ([]*model.Role, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgUserAuthTool (interface {}) ([]*model.Tool, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserMenu (interface {}) ([]*model.Router, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DelOrgUserRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterList (interface {}) ([]*model.Router, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DelOrgUserRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthAllUserRouterPath (interface {}) ([]string, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolUnAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgRoleToolAuth (interface {}) ([]string, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DeleteOrgUserRoleAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolList (interface {}) ([]*model.Tool, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserToolMenuChild (interface {}) ([]*model.Router, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterUnAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgRoleRouterAuth (interface {}) ([]string, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthAllUserToolRouterPath (interface {}) ([]string, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAllOrg () ([]*model.Org, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'DefaultInfoMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SetUserDefaultOrg (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserInfo (interface {}) (*model.User, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserDefaultRole (interface {}) (*model.Role, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserDefaultOrg (interface {}) (*model.Org, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SetUserDefaultRole (interface {}, *sql.Tx) error
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'MenuMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	MenuMapper.SelectAllMenu () ([]*model.Router, error)
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'SystemMapper' mapping resolution
+2024-04-07 14:49:28	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	SystemMapper.AllUserList (interface {}) ([]*model.User, int64, error)
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select exists (select 1 from app_user where account ='root')
+SQL Template ==> select exists (select 1 from app_user where account =$1)
+Parameter: [root] Count: (1), Time: 8.9219ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select exists (select 1 from app_user where account ='root')
+SQL Template ==> select exists (select 1 from app_user where account =$1)
+Parameter: [root] Time: 9.8015ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select *
+        from app_user
+        where account ='root'
+SQL Template ==> select *
+        from app_user
+        where account =$1
+Parameter: [root] Count: (1), Time: 504.1µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select *
+        from app_user
+        where account ='root'
+SQL Template ==> select *
+        from app_user
+        where account =$1
+Parameter: [root] Time: 710.4µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |     12.4195ms |       127.0.0.1 | POST     "/public/login" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select app_org.*
+        from app_org_user
+                 left join app_org on app_org_user.org_id = app_org.id
+        where user_id ='1' and first_choice= true
+SQL Template ==> select app_org.*
+        from app_org_user
+                 left join app_org on app_org_user.org_id = app_org.id
+        where user_id =$1 and first_choice= true
+Parameter: [1] Count: (1), Time: 3.159ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select app_org.*
+        from app_org_user
+                 left join app_org on app_org_user.org_id = app_org.id
+        where user_id ='1' and first_choice= true
+SQL Template ==> select app_org.*
+        from app_org_user
+                 left join app_org on app_org_user.org_id = app_org.id
+        where user_id =$1 and first_choice= true
+Parameter: [1] Time: 3.3759ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select app_role.*
+        from app_org_user_role
+                 left join app_role on app_org_user_role.role_id = app_role.id
+        where user_id ='1' and org_id='1' and first_choice= true
+SQL Template ==> select app_role.*
+        from app_org_user_role
+                 left join app_role on app_org_user_role.role_id = app_role.id
+        where user_id =$1 and org_id=$2 and first_choice= true
+Parameter: [1 1] Count: (1), Time: 2.5296ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select app_role.*
+        from app_org_user_role
+                 left join app_role on app_org_user_role.role_id = app_role.id
+        where user_id ='1' and org_id='1' and first_choice= true
+SQL Template ==> select app_role.*
+        from app_org_user_role
+                 left join app_role on app_org_user_role.role_id = app_role.id
+        where user_id =$1 and org_id=$2 and first_choice= true
+Parameter: [1 1] Time: 2.8649ms
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      6.5852ms |       127.0.0.1 | GET      "/api/user/default/info" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select app_org.*
+        from app_org_user
+                 left join app_org on app_org_user.org_id = app_org.id
+        where app_org_user.user_id = '1';
+SQL Template ==> select app_org.*
+        from app_org_user
+                 left join app_org on app_org_user.org_id = app_org.id
+        where app_org_user.user_id = $1;
+Parameter: [1] Count: (1), Time: 504.6µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select app_org.*
+        from app_org_user
+                 left join app_org on app_org_user.org_id = app_org.id
+        where app_org_user.user_id = '1';
+SQL Template ==> select app_org.*
+        from app_org_user
+                 left join app_org on app_org_user.org_id = app_org.id
+        where app_org_user.user_id = $1;
+Parameter: [1] Time: 750.1µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      1.3774ms |       127.0.0.1 | GET      "/api/user/org/list" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select r.*
+        from app_org_user ou
+                 left join app_org_user_role our on (ou.org_id = our.org_id and ou.user_id = our.user_id)
+                 left join app_role r on our.role_id = r.id
+        where ou.user_id ='1' and ou.org_id='1';
+SQL Template ==> select r.*
+        from app_org_user ou
+                 left join app_org_user_role our on (ou.org_id = our.org_id and ou.user_id = our.user_id)
+                 left join app_role r on our.role_id = r.id
+        where ou.user_id =$1 and ou.org_id=$2;
+Parameter: [1 1] Count: (3), Time: 505.3µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select r.*
+        from app_org_user ou
+                 left join app_org_user_role our on (ou.org_id = our.org_id and ou.user_id = our.user_id)
+                 left join app_role r on our.role_id = r.id
+        where ou.user_id ='1' and ou.org_id='1';
+SQL Template ==> select r.*
+        from app_org_user ou
+                 left join app_org_user_role our on (ou.org_id = our.org_id and ou.user_id = our.user_id)
+                 left join app_role r on our.role_id = r.id
+        where ou.user_id =$1 and ou.org_id=$2;
+Parameter: [1 1] Time: 776.5µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      1.6879ms |       127.0.0.1 | GET      "/api/user/org/list/role?orgId=1" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select *
+        from app_user
+        where id ='1'
+SQL Template ==> select *
+        from app_user
+        where id =$1
+Parameter: [1] Count: (1), Time: 508.5µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select *
+        from app_user
+        where id ='1'
+SQL Template ==> select *
+        from app_user
+        where id =$1
+Parameter: [1] Time: 508.5µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |       1.093ms |       127.0.0.1 | GET      "/api/user/info" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select t.*
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = '1'
+          and ourta.user_id = '1'
+          and ourta.role_id = '1'
+          and t.position='1'
+        order by create_time;
+SQL Template ==> select t.*
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = $1
+          and ourta.user_id = $2
+          and ourta.role_id = $3
+          and t.position=$4
+        order by create_time;
+Parameter: [1 1 1 1] Count: (4), Time: 3.8422ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select t.*
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = '1'
+          and ourta.user_id = '1'
+          and ourta.role_id = '1'
+          and t.position='1'
+        order by create_time;
+SQL Template ==> select t.*
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = $1
+          and ourta.user_id = $2
+          and ourta.role_id = $3
+          and t.position=$4
+        order by create_time;
+Parameter: [1 1 1 1] Time: 4.3425ms
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      5.5871ms |       127.0.0.1 | GET      "/api/user/auth/tool?orgId=1&roleId=1&position=1" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select t.*
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = '1'
+          and ourta.user_id = '1'
+          and ourta.role_id = '1'
+          and t.position='2'
+        order by create_time;
+SQL Template ==> select t.*
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = $1
+          and ourta.user_id = $2
+          and ourta.role_id = $3
+          and t.position=$4
+        order by create_time;
+Parameter: [1 1 1 2] Count: (1), Time: 506.5µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select t.*
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = '1'
+          and ourta.user_id = '1'
+          and ourta.role_id = '1'
+          and t.position='2'
+        order by create_time;
+SQL Template ==> select t.*
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = $1
+          and ourta.user_id = $2
+          and ourta.role_id = $3
+          and t.position=$4
+        order by create_time;
+Parameter: [1 1 1 2] Time: 721.5µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |       2.056ms |       127.0.0.1 | GET      "/api/user/auth/tool?orgId=1&roleId=1&position=2" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '1'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 1] Count: (7), Time: 3.0386ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '1'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 1] Time: 3.5858ms
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      4.4945ms |       127.0.0.1 | GET      "/api/user/auth/tool/menu?orgId=1&roleId=1&toolId=1" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '2'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 2] Count: (0), Time: 507.5µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '2'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 2] Time: 821.7µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      2.2968ms |       127.0.0.1 | GET      "/api/user/auth/tool/menu?orgId=1&roleId=1&toolId=2" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '3'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 3] Count: (0), Time: 502.9µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '3'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 3] Time: 710.9µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |         833µs |       127.0.0.1 | GET      "/api/user/auth/tool/menu?orgId=1&roleId=1&toolId=3" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '5'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 5] Count: (0), Time: 507.5µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '5'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 5] Time: 780.2µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |       847.9µs |       127.0.0.1 | GET      "/api/user/auth/tool/menu?orgId=1&roleId=1&toolId=5" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '4'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 4] Count: (0), Time: 505.3µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and r.tool_id= '4'
+        order by sort;
+SQL Template ==> select r.*
+        from app_org_user_role_router_auth ourma
+                 left join app_router r on (ourma.router_id = r.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and r.tool_id= $4
+        order by sort;
+Parameter: [1 1 1 4] Time: 731.5µs
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      1.3501ms |       127.0.0.1 | GET      "/api/user/auth/tool/menu?orgId=1&roleId=1&toolId=4" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select m.path
+        from app_org_user_role_router_auth ourma
+                 left join app_router m on (ourma.router_id = m.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and m.path!=''
+        order by sort;
+SQL Template ==> select m.path
+        from app_org_user_role_router_auth ourma
+                 left join app_router m on (ourma.router_id = m.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and m.path!=''
+        order by sort;
+Parameter: [1 1 1] Count: (5), Time: 503.3µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select m.path
+        from app_org_user_role_router_auth ourma
+                 left join app_router m on (ourma.router_id = m.id)
+        where ourma.org_id = '1'
+          and ourma.user_id = '1'
+          and ourma.role_id = '1'
+          and m.path!=''
+        order by sort;
+SQL Template ==> select m.path
+        from app_org_user_role_router_auth ourma
+                 left join app_router m on (ourma.router_id = m.id)
+        where ourma.org_id = $1
+          and ourma.user_id = $2
+          and ourma.role_id = $3
+          and m.path!=''
+        order by sort;
+Parameter: [1 1 1] Time: 839.1µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select t.path
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = '1'
+          and ourta.user_id = '1'
+          and ourta.role_id = '1'
+          and t.path!=''
+        order by create_time;
+SQL Template ==> select t.path
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = $1
+          and ourta.user_id = $2
+          and ourta.role_id = $3
+          and t.path!=''
+        order by create_time;
+Parameter: [1 1 1] Count: (3), Time: 636.2µs
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select t.path
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = '1'
+          and ourta.user_id = '1'
+          and ourta.role_id = '1'
+          and t.path!=''
+        order by create_time;
+SQL Template ==> select t.path
+        from app_org_user_role_tool_auth ourta
+                 left join app_tool t on (ourta.tool_id = t.id)
+        where ourta.org_id = $1
+          and ourta.user_id = $2
+          and ourta.role_id = $3
+          and t.path!=''
+        order by create_time;
+Parameter: [1 1 1] Time: 1.1422ms
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      2.0805ms |       127.0.0.1 | GET      "/api/user/all_auth_route?orgId=1&roleId=1" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select *
+        from app_notify
+        where sub_id = '1'
+          and del = 0
+SQL Template ==> select *
+        from app_notify
+        where sub_id = $1
+          and del = 0
+Parameter: [1] Count: (1), Time: 1.509ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select *
+        from app_notify
+        where sub_id = '1'
+          and del = 0
+SQL Template ==> select *
+        from app_notify
+        where sub_id = $1
+          and del = 0
+Parameter: [1] Time: 2.3323ms
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      3.2957ms |       127.0.0.1 | GET      "/api/notify/pull" 
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:182	
+SQL Statements ==> select * from app_dictionary;
+SQL Template ==> select * from app_dictionary;
+Parameter: [] Count: (12), Time: 1.5172ms
+2024-04-07 14:49:34	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:186	
+SQL Statements ==> select * from app_dictionary;
+SQL Template ==> select * from app_dictionary;
+Parameter: [] Time: 2.16ms
+2024-04-07 14:49:34	[35mDEBUG[0m	logger/gin.go:52	| 200 |      2.2176ms |       127.0.0.1 | GET      "/api/dictionary" 
+2024-04-07 14:49:36	[35mDEBUG[0m	gobatis@v0.4.1/mapping.go:276	
+SQL Exec Statements ==> insert into app_notify(id, pub_id, sub_id, title, msg_type, text)
+        values ('MTc3Njg2NDg3OTMyODYyODczNg==', 'system', '1', '登录通知', 1, '成功登录')
+SQL Template ==> insert into app_notify(id, pub_id, sub_id, title, msg_type, text)
+        values ($1, $2, $3, $4, $5, $6)
+Parameter: [MTc3Njg2NDg3OTMyODYyODczNg== system 1 登录通知 1 成功登录], Count: (1), Time: 1.0971ms
+2024-04-07 14:49:43	[31mERROR[0m	app/app.go:36	sync zap log error	{"error": "sync /dev/stdout: The handle is invalid."}
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/rabbitmq.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'RabbitMQMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/notify.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'NotifyMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	NotifyMapper.InsertNotify (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	NotifyMapper.SelectAllNotify (interface {}) ([]*model.AppNotify, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/account.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/auth.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/default.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/fun.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/menu.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/org.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/role.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/system.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/template.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:338	load mapper file path:[mapper/file/tool.xml]
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'AccountMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.SelectAccount (interface {}) (model.User, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.Register (model.User, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AccountMapper.IsRegister (model.User) (bool, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'ToolMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetToolRouter (interface {}) ([]*model.Router, int64, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.DeleteTool (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetToolRouterChild (interface {}) ([]*model.Router, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.GetTool (interface {}) ([]*model.Tool, int64, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.UpdateTool (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.CreateTool (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	ToolMapper.CheckTool (interface {}) (bool, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'OrgMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgUserList (interface {}) ([]*model.User, int64, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.AllOrg (interface {}) ([]*model.Org, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.ExistUser (interface {}) (string, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgChild (interface {}) ([]*model.Org, int64, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.CreateOrg (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.IsParentOrg (interface {}) ([]string, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetOrgRoleList (interface {}) ([]*model.Role, int64, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.DeleteOrg (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.GetDictionary () ([]*model.AppDictionary, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	OrgMapper.UpdateOrg (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'RoleMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.UpdateRole (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.AllRole (interface {}) ([]*model.Role, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.CreateRole (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.CreateOrgRole (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.GetRole (interface {}) ([]*model.Role, int64, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	RoleMapper.DeleteRole (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'FunMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.UpdateFun (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.CreateFun (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.DeleteFun (interface {}) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	FunMapper.GetFun (interface {}) ([]*model.FunRouter, int64, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'AuthMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserToolMenuChild (interface {}) ([]*model.Router, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgUserAuthTool (interface {}) ([]*model.Tool, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgUserAuthToolRouter (interface {}) ([]*model.Router, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserMenu (interface {}) ([]*model.Router, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterUnAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolList (interface {}) ([]*model.Tool, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgRoleRouterAuth (interface {}) ([]string, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserToolMenu (interface {}) ([]*model.Router, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectUserOrgRoleList (interface {}) ([]*model.Role, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthAllUserToolRouterPath (interface {}) ([]string, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DelOrgUserRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAllOrg () ([]*model.Org, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthUserTool (interface {}) ([]*model.Tool, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DeleteOrgUserRoleAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterList (interface {}) ([]*model.Router, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectAuthAllUserRouterPath (interface {}) ([]string, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolUnAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectUserOrgList (interface {}) ([]*model.Org, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.OrgRoleToolRouterAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.SelectOrgRoleToolAuth (interface {}) ([]string, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.AddOrgUserRoleAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	AuthMapper.DelOrgUserRoleToolAuth (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'DefaultInfoMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserInfo (interface {}) (*model.User, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SetUserDefaultOrg (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserDefaultRole (interface {}) (*model.Role, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SetUserDefaultRole (interface {}, *sql.Tx) error
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	DefaultInfoMapper.SelectUserDefaultOrg (interface {}) (*model.Org, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'MenuMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	MenuMapper.SelectAllMenu () ([]*model.Router, error)
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:144	Start scanning the mapper mapping function
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:160	Starts loading the 'SystemMapper' mapping resolution
+2024-04-07 15:02:27	[35mDEBUG[0m	gobatis@v0.4.1/gobatis.go:180	SystemMapper.AllUserList (interface {}) ([]*model.User, int64, error)
+2024-04-07 15:02:34	[31mERROR[0m	app/app.go:36	sync zap log error	{"error": "sync /dev/stdout: The handle is invalid."}

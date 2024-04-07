@@ -1,0 +1,45 @@
+app:
+  number: 1
+  # http 端口配置
+  port: :8080
+  logger:
+    # 日志级别
+    level: debug
+    # 日志输出路径
+    filename: system.log
+    maxsize: 100
+    maxbackups: 10
+    maxage: 30
+  # 数据库连接协议
+  database: host=localhost user=postgres password=Awen*0802^ dbname=postgres port=5432 sslmode=disable TimeZone=Asia/Shanghai
+  # redis
+  redis:
+    host: 82.157.160.117
+    port: 6379
+    password: openIM123
+    db: 10
+  key: gim
+  # openim 配置
+  openim:
+    secret: openIM123
+    admin: openIMAdmin
+    init:
+      platformID: 5
+      apiAddr: http://82.157.160.117:10002
+      wsAddr: ws://82.157.160.117:10001
+      DataDir: ../
+      LogLevel: 6
+      IsExternalExtensions: true
+      IsLogStandardOutput: true
+  minio:
+    endpoint: 82.157.160.117:10005
+    accessKeyID: root
+    secretAccessKey: openIM123
+    secure: false
+
+  rabbitMQ:
+    host: localhost
+    port: 5672
+    user: guest
+    password: guest
+
