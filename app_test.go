@@ -2,8 +2,6 @@ package main
 
 import (
 	"testing"
-	"user/accountutil"
-	"util/uuidutils/uuid"
 )
 
 type Node struct {
@@ -17,6 +15,9 @@ type Test struct {
 }
 
 func TestLog(t *testing.T) {
-	t.Log(uuid.String(1))
-	t.Log(accountutil.Password("123456"))
+
+}
+
+func TestAliPay(t *testing.T) {
+
 }

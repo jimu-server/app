@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/jimu-server/config/config"
-	"github.com/jimu-server/logger/logger"
+	"github.com/jimu-server/config"
+	"github.com/jimu-server/logger"
 	"github.com/jimu-server/web"
 
 	_ "github.com/jimu-server/mq"
 	_ "github.com/jimu-server/notify"
 	_ "github.com/jimu-server/org"
+	_ "github.com/jimu-server/pay"
 	"go.uber.org/zap"
 	"net/http"
 	"os"

@@ -42,4 +42,10 @@ app:
     port: 5672
     user: guest
     password: guest
+  pay:
+    alipay:
+      appID: 9021000135694366
+      appPublicCert: ca/appPublicCert.crt
+      alipayPublicKey: ca/alipayPublicCert.crt
+      alipayRootKey: ca/alipayRootCert.crt
 
