@@ -9,6 +9,7 @@ import (
 	_ "github.com/jimu-server/mq"
 	_ "github.com/jimu-server/notify"
 	_ "github.com/jimu-server/org"
+	_ "github.com/jimu-server/oss"
 	_ "github.com/jimu-server/pay"
 	"go.uber.org/zap"
 	"net/http"
