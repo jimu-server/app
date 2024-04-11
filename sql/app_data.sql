@@ -37,11 +37,12 @@ values ('tool_position', 2, '右侧');
 
 
 -- 初始化用户
-insert into app_user(id, name, picture, account, password, gender, age)
+insert into app_user(id, name, picture, account, password, gender, age, phone, email)
 values (1, 'root', 'https://im-1252940994.cos.ap-nanjing.myqcloud.com/go.jpg', 'root',
-        'PXeFkSq39sRSVXsSaxLWUUWDt45I8tw9mgcY8GE3B/r3VylOko0q727qPChy+uibqcFuCy6w67ruaQ3AyHHeDg==', 0, 12),
+        'PXeFkSq39sRSVXsSaxLWUUWDt45I8tw9mgcY8GE3B/r3VylOko0q727qPChy+uibqcFuCy6w67ruaQ3AyHHeDg==', 0, 12,
+        '15527574117', '1219449282@qq.com'),
        (2, 'root2', 'https://im-1252940994.cos.ap-nanjing.myqcloud.com/go.jpg', 'root2',
-        'PXeFkSq39sRSVXsSaxLWUUWDt45I8tw9mgcY8GE3B/r3VylOko0q727qPChy+uibqcFuCy6w67ruaQ3AyHHeDg==', 1, 43);
+        'PXeFkSq39sRSVXsSaxLWUUWDt45I8tw9mgcY8GE3B/r3VylOko0q727qPChy+uibqcFuCy6w67ruaQ3AyHHeDg==', 1, 43, '', '');
 
 -- 初始化组织
 

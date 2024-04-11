@@ -51,6 +51,8 @@ create table if not exists app_user
     picture     varchar(500) not null default '',
     account     varchar(50)  not null default '',
     password    varchar(100) not null default '',
+    phone       varchar(11)  not null default '',
+    email       varchar(100) not null default '',
     gender      int          not null default 0,
     age         int          not null default 0,
     create_time timestamp(0)          default now() not null
@@ -63,6 +65,8 @@ comment on column app_user.picture is '用户头像 ';
 comment on column app_user.password is '用户密码';
 comment on column app_user.gender is '性别';
 comment on column app_user.age is '年龄';
+comment on column app_user.phone is '手机';
+comment on column app_user.email is '邮箱';
 comment on column app_user.create_time is '创建时间';
 
 -- 组织
