@@ -48,16 +48,19 @@ create table if not exists app_user
 (
     id          varchar(30) primary key,
     name        varchar(50)  not null,
-    picture     varchar(500) not null default '',
-    account     varchar(50)  not null default '',
-    password    varchar(100) not null default '',
+    account     varchar(50)  not null unique,
     phone       varchar(11)  not null default '',
     email       varchar(100) not null default '',
+    password    varchar(100) not null default '',
+    picture     varchar(500) not null default '',
     gender      int          not null default 0,
     age         int          not null default 0,
     create_time timestamp(0)          default now() not null
 );
 create index user_account_key on app_user (account);
+create index user_phone_key on app_user (phone);
+create index user_email_key on app_user (email);
+create index ape on app_user (account, phone, email);
 comment on table app_user is '系统的账号表 ';
 comment on column app_user.account is '用户注册账号 对应 ';
 comment on column app_user.name is '用户昵称 ';

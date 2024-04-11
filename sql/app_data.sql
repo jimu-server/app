@@ -40,9 +40,7 @@ values ('tool_position', 2, '右侧');
 insert into app_user(id, name, picture, account, password, gender, age, phone, email)
 values (1, 'root', 'https://im-1252940994.cos.ap-nanjing.myqcloud.com/go.jpg', 'root',
         'PXeFkSq39sRSVXsSaxLWUUWDt45I8tw9mgcY8GE3B/r3VylOko0q727qPChy+uibqcFuCy6w67ruaQ3AyHHeDg==', 0, 12,
-        '15527574117', '1219449282@qq.com'),
-       (2, 'root2', 'https://im-1252940994.cos.ap-nanjing.myqcloud.com/go.jpg', 'root2',
-        'PXeFkSq39sRSVXsSaxLWUUWDt45I8tw9mgcY8GE3B/r3VylOko0q727qPChy+uibqcFuCy6w67ruaQ3AyHHeDg==', 1, 43, '', '');
+        '15527574117', '1219449282@qq.com');
 
 -- 初始化组织
 
@@ -62,19 +60,10 @@ values (1, 1, 1);
 insert into app_org_role(id, org_id, role_id)
 values (2, 1, 2);
 
-insert into app_org_role(id, org_id, role_id)
-values (3, 2, 1);
-
 
 -- 初始化组织用户
 insert into app_org_user(id, org_id, user_id, first_choice)
 values (1, 1, 1, true);
-
-insert into app_org_user(id, org_id, user_id, first_choice)
-values (2, 2, 2, true);
-
-insert into app_org_user(id, org_id, user_id, first_choice)
-values (3, 1, 2, false);
 
 
 -- 初始化 root 角色分配
@@ -83,9 +72,6 @@ values (1, 1, 1, 1, true);
 
 insert into app_org_user_role(id, org_id, user_id, role_id, first_choice)
 values (2, 1, 1, 2, false);
-
-insert into app_org_user_role(id, org_id, user_id, role_id, first_choice)
-values (3, 1, 2, 2, true);
 
 
 -- 初始化路由菜单

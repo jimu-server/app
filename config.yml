@@ -14,11 +14,16 @@ app:
   database: host=localhost user=postgres password=Awen*0802^ dbname=postgres port=5432 sslmode=disable TimeZone=Asia/Shanghai
   # redis
   redis:
-    host: 82.157.160.117
+    host: localhost
     port: 6379
-    password: openIM123
-    db: 10
+    password:
+    db: 0
   key: gim
+  email:
+    account: jimuos@163.com
+    host: smtp.163.com
+    port: 465
+    password: OFLSPAKBOEACDAAM
   # openim 配置
   openim:
     secret: openIM123
