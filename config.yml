@@ -20,7 +20,7 @@ app:
     db: 0
   key: gim
   email:
-    account: jimuos@163.com
+    user: jimuos@163.com
     host: smtp.163.com
     port: 465
     password: OFLSPAKBOEACDAAM
