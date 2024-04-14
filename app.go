@@ -6,6 +6,7 @@ import (
 	"github.com/jimu-server/logger"
 	"github.com/jimu-server/web"
 
+	_ "github.com/jimu-server/gpt"
 	_ "github.com/jimu-server/mq"
 	_ "github.com/jimu-server/notify"
 	_ "github.com/jimu-server/org"

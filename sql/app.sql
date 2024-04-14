@@ -328,11 +328,19 @@ create table app_chat_conversation
 (
     id          varchar(30) primary key,
     picture     varchar(500) not null default '',
-    send_id     varchar(30),
-    receive_id  varchar(30)  not null,
+    user_id     varchar(30)  not null,
     title       varchar(100) not null,
+    last_model   varchar(30)           default '',
+    last_msg     text                  default '',
+    last_time    timestamp(0) not null default now(),
     create_time timestamp(0) not null default now()
 );
 
-
+comment on table app_chat_conversation is '组织-用户-角色-工具栏-路由授权表';
+comment on column app_chat_conversation.picture is '会话头像';
+comment on column app_chat_conversation.user_id is '接收者id:一般是用户id';
+comment on column app_chat_conversation.last_model is '最后一次消息的模型id';
+comment on column app_chat_conversation.last_msg is '最后一次消息的内容';
+comment on column app_chat_conversation.last_time is '最后一次消息的时间';
+comment on column app_chat_conversation.title is '会话标题';
 
