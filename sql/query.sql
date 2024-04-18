@@ -116,3 +116,6 @@ select ar.*
 from app_tool at
          left join app_router ar on at.id = ar.tool_id
 where tool_id='1' and pid='' limit 10 offset 0;
+
+
+select * from app_chat_conversation

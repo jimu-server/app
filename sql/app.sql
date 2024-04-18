@@ -351,6 +351,8 @@ create table app_chat_message
     id              varchar(30) primary key,
     conversation_id varchar(30)  not null,
     user_id         varchar(30)  not null,
+    model_id        varchar(30)  not null,
+    picture         varchar(100) not null,
     role            varchar(30)  not null,
     content         text,
     create_time     timestamp(0) not null default now()
@@ -358,6 +360,8 @@ create table app_chat_message
 
 comment on table app_chat_message is 'gpt 会话消息表';
 comment on column app_chat_message.user_id is '所属用户';
+comment on column app_chat_message.model_id is '模型id';
+comment on column app_chat_message.picture is '消息头像';
 comment on column app_chat_message.conversation_id is '消息所属会话';
 comment on column app_chat_message.role is '消息角色 :user or system';
 comment on column app_chat_message.content is '消息内容';
@@ -370,7 +374,7 @@ create table app_chat_model
     id          varchar(30) primary key,
     name        varchar(100) not null,
     model       varchar(100) not null,
-    icon        varchar(100) not null,
+    picture        varchar(100) not null,
     parameters  varchar(10)  not null,
     size        varchar(10)  not null,
     download    varchar(50)  not null,
@@ -379,7 +383,7 @@ create table app_chat_model
 comment on table app_chat_model is 'gpt 会话消息表';
 comment on column app_chat_model.model is '模型名';
 comment on column app_chat_model.name is '名称';
-comment on column app_chat_model.icon is '图标';
+comment on column app_chat_model.picture is '图标';
 comment on column app_chat_model.parameters is '参数';
 comment on column app_chat_model.size is '模型大小';
 comment on column app_chat_model.download is '下载指令';
