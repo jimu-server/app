@@ -200,3 +200,14 @@ values (5, 1, 1, 1, 4);
 
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
 values (6, 1, 1, 1, 5);
+
+
+-- 初始化模型数据
+insert into app_chat_model(id, name, model,icon, parameters, size, download)
+values (1, 'Llama:7B', 'llama2', '','7B', '3.8GB', 'ollama run llama2');
+
+insert into app_chat_model(id, name, model,icon, parameters, size, download)
+values (2, 'Gemma', 'gemma:2b','https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png' ,'2B', '1.7GB', 'ollama run gemma:2b');
+
+insert into app_chat_model(id, name, model,icon, parameters, size, download)
+values (3, 'Mistral:7B', 'mistral','https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png' ,'2B', '1.7GB', 'ollama run gemma:2b');

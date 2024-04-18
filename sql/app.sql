@@ -330,13 +330,13 @@ create table app_chat_conversation
     picture     varchar(500) not null default '',
     user_id     varchar(30)  not null,
     title       varchar(100) not null,
-    last_model   varchar(30)           default '',
-    last_msg     text                  default '',
-    last_time    timestamp(0) not null default now(),
+    last_model  varchar(30)           default '',
+    last_msg    text                  default '',
+    last_time   timestamp(0) not null default now(),
     create_time timestamp(0) not null default now()
 );
 
-comment on table app_chat_conversation is '组织-用户-角色-工具栏-路由授权表';
+comment on table app_chat_conversation is 'gpt 会话表';
 comment on column app_chat_conversation.picture is '会话头像';
 comment on column app_chat_conversation.user_id is '接收者id:一般是用户id';
 comment on column app_chat_conversation.last_model is '最后一次消息的模型id';
@@ -344,3 +344,42 @@ comment on column app_chat_conversation.last_msg is '最后一次消息的内容
 comment on column app_chat_conversation.last_time is '最后一次消息的时间';
 comment on column app_chat_conversation.title is '会话标题';
 
+
+drop table if exists app_chat_message;
+create table app_chat_message
+(
+    id              varchar(30) primary key,
+    conversation_id varchar(30)  not null,
+    user_id         varchar(30)  not null,
+    role            varchar(30)  not null,
+    content         text,
+    create_time     timestamp(0) not null default now()
+);
+
+comment on table app_chat_message is 'gpt 会话消息表';
+comment on column app_chat_message.user_id is '所属用户';
+comment on column app_chat_message.conversation_id is '消息所属会话';
+comment on column app_chat_message.role is '消息角色 :user or system';
+comment on column app_chat_message.content is '消息内容';
+comment on column app_chat_message.create_time is '消息时间';
+
+
+drop table if exists app_chat_model;
+create table app_chat_model
+(
+    id          varchar(30) primary key,
+    name        varchar(100) not null,
+    model       varchar(100) not null,
+    icon        varchar(100) not null,
+    parameters  varchar(10)  not null,
+    size        varchar(10)  not null,
+    download    varchar(50)  not null,
+    create_time timestamp(0) not null default now()
+);
+comment on table app_chat_model is 'gpt 会话消息表';
+comment on column app_chat_model.model is '模型名';
+comment on column app_chat_model.name is '名称';
+comment on column app_chat_model.icon is '图标';
+comment on column app_chat_model.parameters is '参数';
+comment on column app_chat_model.size is '模型大小';
+comment on column app_chat_model.download is '下载指令';
