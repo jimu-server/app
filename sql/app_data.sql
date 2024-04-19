@@ -207,7 +207,11 @@ insert into app_chat_model(id, name, model,picture, parameters, size, download)
 values (1, 'Llama:7B', 'llama2', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png','7B', '3.8GB', 'ollama run llama2');
 
 insert into app_chat_model(id, name, model,picture, parameters, size, download)
-values (2, 'Gemma', 'gemma:2b','https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fgemma.png' ,'2B', '1.7GB', 'ollama run gemma:2b');
+values (2, 'Llama:8B', 'llama3', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png','7B', '4.7GB', 'ollama run llama3');
+
 
 insert into app_chat_model(id, name, model,picture, parameters, size, download)
-values (3, 'Mistral:7B', 'mistral','https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png' ,'2B', '1.7GB', 'ollama run gemma:2b');
+values (3, 'Gemma', 'gemma:2b','https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fgemma.png' ,'2B', '1.7GB', 'ollama run gemma:2b');
+
+insert into app_chat_model(id, name, model,picture, parameters, size, download)
+values (4, 'Mistral:7B', 'mistral','https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png' ,'2B', '1.7GB', 'ollama run gemma:2b');
