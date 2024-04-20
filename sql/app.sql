@@ -350,6 +350,7 @@ create table app_chat_message
 (
     id              varchar(30) primary key,
     conversation_id varchar(30)  not null,
+    message_id      varchar(30)  not null,
     user_id         varchar(30)  not null,
     model_id        varchar(30)  not null,
     picture         varchar(100) not null,
@@ -360,10 +361,11 @@ create table app_chat_message
 
 comment on table app_chat_message is 'gpt 会话消息表';
 comment on column app_chat_message.user_id is '所属用户';
-comment on column app_chat_message.model_id is '模型id';
-comment on column app_chat_message.picture is '消息头像';
+comment on column app_chat_message.message_id is '标识当前消息相关回复的消息id,对于用户发送的消息,回复的消息应该是gpt的消息id,若是首次消息则为消息主键本身';
+comment on column app_chat_message.model_id is '模型id,当前消息产生于那个模型';
+comment on column app_chat_message.picture is '消息头像,消息角色所属头像';
 comment on column app_chat_message.conversation_id is '消息所属会话';
-comment on column app_chat_message.role is '消息角色 :user or system';
+comment on column app_chat_message.role is '消息角色 :user[用户] or assistant[助手]';
 comment on column app_chat_message.content is '消息内容';
 comment on column app_chat_message.create_time is '消息时间';
 
@@ -374,7 +376,7 @@ create table app_chat_model
     id          varchar(30) primary key,
     name        varchar(100) not null,
     model       varchar(100) not null,
-    picture        varchar(100) not null,
+    picture     varchar(100) not null,
     parameters  varchar(10)  not null,
     size        varchar(10)  not null,
     download    varchar(50)  not null,
