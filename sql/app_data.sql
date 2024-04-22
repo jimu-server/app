@@ -52,6 +52,8 @@ insert into app_role(id, name, role_key)
 values (1, '超级管理员', 'root');
 insert into app_role(id, name, role_key)
 values (2, '管理员', 'admin');
+insert into app_role(id, name, role_key)
+values (3, '普通', 'normal');
 
 -- 初始化组织角色
 insert into app_org_role(id, org_id, role_id)
@@ -59,6 +61,9 @@ values (1, 1, 1);
 
 insert into app_org_role(id, org_id, role_id)
 values (2, 1, 2);
+
+insert into app_org_role(id, org_id, role_id)
+values (3, 1, 3);
 
 
 -- 初始化组织用户
@@ -152,7 +157,7 @@ insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull
 VALUES (1, '管理', 'manage', 'jimu-a-xitong3', 2, 'ManageTool', 'DefaultBtn', '', '', '', '管理系统', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
-VALUES (2, 'GPT聊天', 'gpt', 'jimu-ChatGPT', 1, 'components/system-components/tool/chatGptTool/ChatGPT', 'DefaultBtn',
+VALUES (2, 'GPT聊天', 'gpt', 'jimu-ChatGPT', 1, 'components/tool-components/chatGptTool/ChatGPT', 'DefaultBtn',
         '', '', '/app/gpt', 'AI聊天', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
@@ -165,7 +170,7 @@ VALUES (4, '通知', 'notify', 'jimu-notify-on', 2, 'NotifyTool', 'NotifyBtn', '
         '/api/notify/pull', '', '通知', 2);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
-VALUES (5, '流程图', 'flow', 'jimu-flow', 1, 'components/system-components/tool/flowTool/FlowChart', 'DefaultBtn', '',
+VALUES (5, '流程图', 'flow', 'jimu-flow', 1, 'components/tool-components/flowTool/FlowChart', 'DefaultBtn', '',
         '', '/app/flow', '流程图', 1);
 
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
@@ -203,15 +208,19 @@ values (6, 1, 1, 1, 5);
 
 
 -- 初始化模型数据
-insert into app_chat_model(id, name, model,picture, parameters, size, download)
-values (1, 'Llama:7B', 'llama2', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png','7B', '3.8GB', 'ollama run llama2');
+insert into app_chat_model(id, name, model, picture, parameters, size, download)
+values (1, 'Llama:7B', 'llama2', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png', '7B',
+        '3.8GB', 'ollama run llama2');
 
-insert into app_chat_model(id, name, model,picture, parameters, size, download)
-values (2, 'Llama:8B', 'llama3', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png','7B', '4.7GB', 'ollama run llama3');
+insert into app_chat_model(id, name, model, picture, parameters, size, download)
+values (2, 'Llama:8B', 'llama3', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png', '7B',
+        '4.7GB', 'ollama run llama3');
 
 
-insert into app_chat_model(id, name, model,picture, parameters, size, download)
-values (3, 'Gemma', 'gemma:2b','https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fgemma.png' ,'2B', '1.7GB', 'ollama run gemma:2b');
+insert into app_chat_model(id, name, model, picture, parameters, size, download)
+values (3, 'Gemma', 'gemma:2b', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fgemma.png', '2B',
+        '1.7GB', 'ollama run gemma:2b');
 
-insert into app_chat_model(id, name, model,picture, parameters, size, download)
-values (4, 'Mistral:7B', 'mistral','https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png' ,'2B', '1.7GB', 'ollama run gemma:2b');
+insert into app_chat_model(id, name, model, picture, parameters, size, download)
+values (4, 'Mistral:7B', 'mistral', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png',
+        '2B', '1.7GB', 'ollama run gemma:2b');
