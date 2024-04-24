@@ -373,19 +373,20 @@ comment on column app_chat_message.create_time is '消息时间';
 drop table if exists app_chat_model;
 create table app_chat_model
 (
-    id          varchar(30) primary key,
-    name        varchar(100) not null,
-    model       varchar(100) not null,
-    picture     varchar(100) not null,
-    parameters  varchar(10)  not null,
-    size        varchar(10)  not null,
-    download    varchar(50)  not null,
-    create_time timestamp(0) not null default now()
+    id            varchar(30) primary key,
+    name          varchar(100) not null,
+    model         varchar(100) not null,
+    picture       varchar(100) not null,
+    size          varchar(50)  not null,
+    digest        varchar(100)          default '',
+    model_details json                  default '{}',
+    is_download   boolean               default false,
+    create_time   timestamp(0) not null default now()
 );
-comment on table app_chat_model is 'gpt 会话消息表';
-comment on column app_chat_model.model is '模型名';
-comment on column app_chat_model.name is '名称';
+create index model_key on app_chat_model (model);
+comment on table app_chat_model is 'ollama 内置模型';
+comment on column app_chat_model.name is '名称,显示名称';
+comment on column app_chat_model.model is '模型名,一版是调用模型传参';
 comment on column app_chat_model.picture is '图标';
-comment on column app_chat_model.parameters is '参数';
 comment on column app_chat_model.size is '模型大小';
-comment on column app_chat_model.download is '下载指令';
+comment on column app_chat_model.is_download is '是否下载';
