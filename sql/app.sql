@@ -374,6 +374,8 @@ drop table if exists app_chat_model;
 create table app_chat_model
 (
     id            varchar(30) primary key,
+    pid           varchar(30)  not null,
+    user_id       varchar(30)  not null,
     name          varchar(100) not null,
     model         varchar(100) not null,
     picture       varchar(100) not null,
@@ -385,8 +387,32 @@ create table app_chat_model
 );
 create index model_key on app_chat_model (model);
 comment on table app_chat_model is 'ollama 内置模型';
+comment on column app_chat_model.user_id is '所属用户';
+comment on column app_chat_model.pid is '父模型,内置模型的 pid==id';
 comment on column app_chat_model.name is '名称,显示名称';
 comment on column app_chat_model.model is '模型名,一版是调用模型传参';
 comment on column app_chat_model.picture is '图标';
 comment on column app_chat_model.size is '模型大小';
 comment on column app_chat_model.is_download is '是否下载';
+
+drop table if exists app_chat_knowledge_file;
+create table app_chat_knowledge_file
+(
+    id          varchar(30) primary key,
+    pid         varchar(30)  not null,
+    user_id     varchar(30)  not null,
+    file_name   varchar(100) not null,
+    file_path   varchar(100) not null,
+    file_type   int          not null,
+    is_gen      varchar(100) not null,
+    create_time timestamp(0) not null default now()
+);
+comment on table app_chat_knowledge_file is '知识库文件';
+comment on column app_chat_knowledge_file.id is '知识库id';
+comment on column app_chat_knowledge_file.pid is '上级';
+comment on column app_chat_knowledge_file.file_name is '文件名';
+comment on column app_chat_knowledge_file.file_path is '文件路径';
+comment on column app_chat_knowledge_file.file_type is '文件类型';
+comment on column app_chat_knowledge_file.is_gen is '是否生成';
+comment on column app_chat_knowledge_file.create_time is '创建时间';
+

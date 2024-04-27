@@ -35,6 +35,21 @@ values ('tool_position', 1, '左侧');
 insert into app_dictionary(type, status, name)
 values ('tool_position', 2, '右侧');
 
+insert into app_dictionary(type, status, name)
+values ('chat_knowledge_file', 1, '文件夹');
+
+insert into app_dictionary(type, status, name)
+values ('chat_knowledge_file', 2, 'docx');
+
+insert into app_dictionary(type, status, name)
+values ('chat_knowledge_file', 3, 'pdf');
+
+insert into app_dictionary(type, status, name)
+values ('chat_knowledge_file', 4, 'excel');
+
+insert into app_dictionary(type, status, name)
+values ('chat_knowledge_file', 5, 'txt');
+
 
 -- 初始化用户
 insert into app_user(id, name, picture, account, password, gender, age, phone, email)
@@ -109,6 +124,13 @@ insert into app_router(id, pid, title, icon, name, component, path, status, tool
 values (7, 4, '工具配置', 'jimu-tools', 'tool', 'components/system-components/tool/manageTool/page/ToolManagePage',
         '/app/manage/tool', true, 1, 7);
 
+insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
+values (8, '', 'AI管理', 'jimu-shenduxuexi', '', '', '', true, 1, 8);
+
+insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
+values (9, 8, '模型管理', 'jimu-moxingguanli', 'model',
+        'components/tool-components/chatGptTool/manage/ModelManagePage', '/app/manage/model', true, 1, 9);
+
 -- 初始化 root 角色的菜单权限
 insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
 values (1, 1, 1, 1, 1);
@@ -130,6 +152,12 @@ values (6, 6, 1, 1, 1);
 
 insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
 values (7, 7, 1, 1, 1);
+
+insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
+values (8, 8, 1, 1, 1);
+
+insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
+values (9, 9, 1, 1, 1);
 
 
 -- 初始化 root 用户的 root 角色的菜单权限授权
@@ -153,6 +181,12 @@ values (6, 1, 1, 1, 1, 6);
 
 insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
 values (7, 1, 1, 1, 1, 7);
+
+insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
+values (8, 1, 1, 1, 1, 8);
+
+insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
+values (9, 1, 1, 1, 1, 9);
 
 
 -- 初始化工具
@@ -211,28 +245,29 @@ values (6, 1, 1, 1, 5);
 
 
 -- 初始化模型数据
-insert into app_chat_model(id, name, model, picture, size, is_download)
-values (1, 'Llama2:7B', 'llama2', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png',
+insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
+values (1, 1, 1, 'Llama2:7B', 'llama2', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png',
         '3.8GB', true);
 
-insert into app_chat_model(id, name, model, picture, size, is_download)
-values (2, 'Code Llama2:7B', 'codellama:7b',
+insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
+values (2, 2, 1, 'Code Llama2:7B', 'codellama:7b',
         'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png',
         '3.8GB', false);
 
-insert into app_chat_model(id, name, model, picture, size, is_download)
-values (3, 'Llama3:8B', 'llama3', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png',
+insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
+values (3, 3, 1, 'Llama3:8B', 'llama3', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png',
         '4.7GB', true);
 
 
-insert into app_chat_model(id, name, model, picture, size, is_download)
-values (4, 'Gemma:2B', 'gemma:2b', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fgemma.png',
+insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
+values (4, 4, 1, 'Gemma:2B', 'gemma:2b', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fgemma.png',
         '1.7GB', false);
 
-insert into app_chat_model(id, name, model, picture, size, is_download)
-values (5, 'Gemma:7B', 'gemma:7b', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fgemma.png',
+insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
+values (5, 5, 1, 'Gemma:7B', 'gemma:7b', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fgemma.png',
         '4.8GB', false);
 
-insert into app_chat_model(id, name, model, picture, size, is_download)
-values (6, 'Mistral:7B', 'mistral', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png',
+insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
+values (6, 6, 1, 'Mistral:7B', 'mistral',
+        'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png',
         '4.1GB', true);
