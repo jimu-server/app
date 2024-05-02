@@ -247,7 +247,7 @@ values (6, 1, 1, 1, 5);
 -- 初始化模型数据
 insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
 values (1, 1, 1, 'Llama2:7B', 'llama2', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png',
-        '3.8GB', true);
+        '3.8GB', false);
 
 insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
 values (2, 2, 1, 'Code Llama2:7B', 'codellama:7b',
@@ -256,7 +256,7 @@ values (2, 2, 1, 'Code Llama2:7B', 'codellama:7b',
 
 insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
 values (3, 3, 1, 'Llama3:8B', 'llama3', 'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fllama.png',
-        '4.7GB', true);
+        '4.7GB', false);
 
 
 insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
@@ -270,9 +270,9 @@ values (5, 5, 1, 'Gemma:7B', 'gemma:7b', 'https://jimuos-1252940994.cos.ap-nanji
 insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
 values (6, 6, 1, 'Mistral:7B', 'mistral',
         'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png',
-        '4.1GB', true);
+        '4.1GB', false);
 
 insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
-values (6, 6, 1, 'nomic-embed-text', 'nomic-embed-text',
+values (7, 7, 1, 'nomic-embed-text', 'nomic-embed-text',
         'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png',
-        '', true);
+        '', false);
