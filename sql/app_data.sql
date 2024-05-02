@@ -271,3 +271,8 @@ insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_down
 values (6, 6, 1, 'Mistral:7B', 'mistral',
         'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png',
         '4.1GB', true);
+
+insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_download)
+values (6, 6, 1, 'nomic-embed-text', 'nomic-embed-text',
+        'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png',
+        '', true);

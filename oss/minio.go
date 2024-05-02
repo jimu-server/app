@@ -2,10 +2,10 @@ package oss
 
 import (
 	"context"
+	"github.com/jimu-server/logger"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"go.uber.org/zap"
-	"logger/logger"
 )
 
 var Minio *minio.Client

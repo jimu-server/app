@@ -404,7 +404,6 @@ create table app_chat_knowledge_file
     file_name   varchar(100) not null,
     file_path   varchar(100) not null,
     file_type   int          not null,
-    is_gen      varchar(100) not null,
     create_time timestamp(0) not null default now()
 );
 comment on table app_chat_knowledge_file is '知识库文件';
@@ -413,6 +412,24 @@ comment on column app_chat_knowledge_file.pid is '上级';
 comment on column app_chat_knowledge_file.file_name is '文件名';
 comment on column app_chat_knowledge_file.file_path is '文件路径';
 comment on column app_chat_knowledge_file.file_type is '文件类型';
-comment on column app_chat_knowledge_file.is_gen is '是否生成';
 comment on column app_chat_knowledge_file.create_time is '创建时间';
+
+drop table if exists app_chat_knowledge_instance;
+create table app_chat_knowledge_instance
+(
+    id                    varchar(30) primary key,
+    user_id               varchar(30)  not null,
+    knowledge_name        varchar(500) not null default '[]',
+    knowledge_files       json         not null default '[]',
+    knowledge_description varchar(500) not null default '',
+    knowledge_type        int          not null default 0,
+    create_time           timestamp(0) not null default now()
+);
+comment on table app_chat_knowledge_instance is '知识库实例';
+comment on column app_chat_knowledge_instance.user_id is '所属用户';
+comment on column app_chat_knowledge_instance.knowledge_name is '知识库名称';
+comment on column app_chat_knowledge_instance.knowledge_description is '知识库描述';
+comment on column app_chat_knowledge_instance.knowledge_files is '知识库文件列表';
+comment on column app_chat_knowledge_instance.create_time is '创建时间';
+comment on column app_chat_knowledge_instance.knowledge_type is '知识库类型;区分系统预置,和用户创建';
 
