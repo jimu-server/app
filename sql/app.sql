@@ -322,6 +322,21 @@ create table app_org_user_role_fun_auth
     create_time timestamp(0) not null default now()
 );
 
+drop table if exists app_setting;
+create table app_setting
+(
+    id          varchar(30) primary key,
+    pid         varchar(30)  not null,
+    name        varchar(100) not null,
+    value       varchar(500) not null,
+    setting     json                  default '{}',
+    create_time timestamp(0) not null default now()
+);
+comment on table app_setting is 'gpt 会话表';
+comment on column app_setting.id is '设置id';
+comment on column app_setting.name is '设置项名';
+comment on column app_setting.value is '设置项展示组件名';
+comment on column app_setting.setting is '设置属性值';
 
 drop table if exists app_chat_conversation;
 create table app_chat_conversation
