@@ -166,6 +166,7 @@ create table app_tool
     pull        varchar(100) not null,
     path        varchar(200) not null,
     tip         varchar(100) not null,
+    setting_id  varchar(30)  not null default '',
     position    int          not null
 );
 comment on table app_tool is '周边工具栏表';
@@ -179,6 +180,7 @@ comment on column app_tool.ws is '消息推送接口';
 comment on column app_tool.pull is '消息拉取接口';
 comment on column app_tool.path is '工具基础路径 工具栏下的所有路由都应该基于此 /{name}';
 comment on column app_tool.tip is '提示语,一般填写工具名称';
+comment on column app_tool.setting_id is '配置项id';
 comment on column app_tool.position is '工具按钮位置信息 1:左侧 2:右侧';
 
 -- 初始化系统路由
@@ -332,7 +334,7 @@ create table app_setting
     setting     json                  default '{}',
     create_time timestamp(0) not null default now()
 );
-comment on table app_setting is 'gpt 会话表';
+comment on table app_setting is 'app 设置表';
 comment on column app_setting.id is '设置id';
 comment on column app_setting.name is '设置项名';
 comment on column app_setting.value is '设置项展示组件名';
@@ -447,4 +449,6 @@ comment on column app_chat_knowledge_instance.knowledge_description is '知识�
 comment on column app_chat_knowledge_instance.knowledge_files is '知识库文件列表';
 comment on column app_chat_knowledge_instance.create_time is '创建时间';
 comment on column app_chat_knowledge_instance.knowledge_type is '知识库类型;区分系统预置,和用户创建';
+
+
 

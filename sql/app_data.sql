@@ -193,9 +193,9 @@ values (9, 1, 1, 1, 1, 9);
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (1, '管理', 'manage', 'jimu-a-xitong3', 2, 'ManageTool', 'DefaultBtn', '', '', '', '管理系统', 1);
 
-insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
+insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, setting_id, position)
 VALUES (2, 'GPT聊天', 'gpt', 'jimu-ChatGPT', 1, 'components/tool-components/chatGptTool/ChatGPT', 'DefaultBtn',
-        '', '', '/app/gpt', 'AI聊天', 1);
+        '', '', '/app/gpt', 'AI聊天', 2, 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (3, '开发', 'debug', 'jimu-debug-', 1, 'components/system-components/pages/DevPage', 'DefaultBtn', '', '',
@@ -276,3 +276,9 @@ insert into app_chat_model(id, pid, user_id, name, model, picture, size, is_down
 values (7, 7, 1, 'nomic-embed-text', 'nomic-embed-text',
         'https://jimuos-1252940994.cos.ap-nanjing.myqcloud.com/llm%2Fiocn%2Fmaistral.png',
         '', false);
+
+-- 初始化 ollama 配置项
+insert into app_setting(id, pid, name, value)
+VALUES (1, '', '账号设置', 'UserInfoSetting');
+insert into app_setting(id, pid, name, value)
+VALUES (2, '', 'Ollama', 'OllamaSetting')
