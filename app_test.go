@@ -1,9 +1,7 @@
 package main
 
 import (
-	"bytes"
 	"context"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/philippgille/chromem-go"
 	"runtime"
 	"testing"
@@ -41,11 +39,5 @@ func TestChrome(t *testing.T) {
 var embedPdfMinerHighLevel []byte
 
 func TestPdf(t *testing.T) {
-	reader := bytes.NewBuffer(nil)
-	err := pdfcpu.WriteReader("GO e14d02f8e048415e9958e8d109b63bc0.pdf", reader)
-	if err != nil {
-		t.Error(err.Error())
-		return
-	}
-	t.Logf("%s", reader.String())
+
 }
