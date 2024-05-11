@@ -68,7 +68,7 @@ values (1, '超级管理员', 'root');
 insert into app_role(id, name, role_key)
 values (2, '管理员', 'admin');
 insert into app_role(id, name, role_key)
-values (3, '普通', 'normal');
+values (3, '普通用户', 'normal');
 
 -- 初始化组织角色
 insert into app_org_role(id, org_id, role_id)
@@ -193,9 +193,9 @@ values (9, 1, 1, 1, 1, 9);
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (1, '管理', 'manage', 'jimu-a-xitong3', 2, 'ManageTool', 'DefaultBtn', '', '', '', '管理系统', 1);
 
-insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, setting_id, position)
+insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (2, 'GPT聊天', 'gpt', 'jimu-ChatGPT', 1, 'components/tool-components/chatGptTool/ChatGPT', 'DefaultBtn',
-        '', '', '/app/gpt', 'AI聊天', 2, 1);
+        '', '', '/app/gpt', 'AI聊天', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (3, '开发', 'debug', 'jimu-debug-', 1, 'components/system-components/pages/DevPage', 'DefaultBtn', '', '',
@@ -278,7 +278,7 @@ values (7, 7, 1, 'nomic-embed-text', 'nomic-embed-text',
         '', false);
 
 -- 初始化 ollama 配置项
-insert into app_setting(id, pid, name, value)
-VALUES (1, '', '账号设置', 'UserInfoSetting');
-insert into app_setting(id, pid, name, value)
-VALUES (2, '', 'Ollama', 'OllamaSetting')
+insert into app_setting(id, pid, user_id, name, value, tool_id)
+VALUES (1, '', 1, '账号设置', 'UserInfoSetting', 0);
+insert into app_setting(id, pid, user_id, name, value, tool_id)
+VALUES (2, '', 1, 'Ollama', 'OllamaSetting', 2)

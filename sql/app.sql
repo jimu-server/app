@@ -166,7 +166,6 @@ create table app_tool
     pull        varchar(100) not null,
     path        varchar(200) not null,
     tip         varchar(100) not null,
-    setting_id  varchar(30)  not null default '',
     position    int          not null
 );
 comment on table app_tool is '周边工具栏表';
@@ -180,7 +179,6 @@ comment on column app_tool.ws is '消息推送接口';
 comment on column app_tool.pull is '消息拉取接口';
 comment on column app_tool.path is '工具基础路径 工具栏下的所有路由都应该基于此 /{name}';
 comment on column app_tool.tip is '提示语,一般填写工具名称';
-comment on column app_tool.setting_id is '配置项id';
 comment on column app_tool.position is '工具按钮位置信息 1:左侧 2:右侧';
 
 -- 初始化系统路由
@@ -329,15 +327,20 @@ create table app_setting
 (
     id          varchar(30) primary key,
     pid         varchar(30)  not null,
+    user_id     varchar(30)  not null,
     name        varchar(100) not null,
     value       varchar(500) not null,
+    tool_id     varchar(30)  not null,
     setting     json                  default '{}',
     create_time timestamp(0) not null default now()
 );
 comment on table app_setting is 'app 设置表';
 comment on column app_setting.id is '设置id';
+comment on column app_setting.pid is '父id';
+comment on column app_setting.user_id is '所属用户';
 comment on column app_setting.name is '设置项名';
 comment on column app_setting.value is '设置项展示组件名';
+comment on column app_setting.tool_id is '配置所属工具id';
 comment on column app_setting.setting is '设置属性值';
 
 drop table if exists app_chat_conversation;
