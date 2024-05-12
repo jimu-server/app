@@ -279,6 +279,6 @@ values (7, 7, 1, 'nomic-embed-text', 'nomic-embed-text',
 
 -- 初始化 ollama 配置项
 insert into app_setting(id, pid, user_id, name, value, tool_id)
-VALUES (1, '', 1, '账号设置', 'UserInfoSetting', 0);
-insert into app_setting(id, pid, user_id, name, value, tool_id)
-VALUES (2, '', 1, 'Ollama', 'OllamaSetting', 2)
+VALUES (1, '', 0, '账号设置', 'UserInfoSetting', 0);
+insert into app_setting(id, pid, user_id, name, value, tool_id,setting)
+VALUES (2, '', 1, 'Ollama', 'OllamaSetting', 2,'{"host": "http://localhost:11434", "ollamaModel": ""}')
