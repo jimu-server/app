@@ -24,18 +24,9 @@ app:
     host: smtp.163.com
     port: 465
     password: OFLSPAKBOEACDAAM
-  # openim 配置
-  openim:
-    secret: openIM123
-    admin: openIMAdmin
-    init:
-      platformID: 5
-      apiAddr: http://82.157.160.117:10002
-      wsAddr: ws://82.157.160.117:10001
-      DataDir: ../
-      LogLevel: 6
-      IsExternalExtensions: true
-      IsLogStandardOutput: true
+  # 本地提供 ollama 服务的配置 一般运行在用户本地
+  ollama:
+    port: 11435
   minio:
     endpoint: 82.157.160.117:10005
     accessKeyID: root

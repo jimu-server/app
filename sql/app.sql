@@ -353,6 +353,7 @@ create table app_chat_conversation
     last_model  varchar(30)           default '',
     last_msg    text                  default '',
     last_time   timestamp(0) not null default now(),
+    delete          int          not null default 0,
     create_time timestamp(0) not null default now()
 );
 
@@ -376,6 +377,7 @@ create table app_chat_message
     picture         varchar(100) not null,
     role            varchar(30)  not null,
     content         text,
+    delete          int          not null default 0,
     create_time     timestamp(0) not null default now()
 );
 
