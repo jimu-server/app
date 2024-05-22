@@ -210,6 +210,12 @@ insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull
 VALUES (5, '流程图', 'flow', 'jimu-flow', 1, 'components/tool-components/flowTool/FlowChart', 'DefaultBtn', '',
         '', '/app/flow', '流程图', 1);
 
+insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
+VALUES (6, 'AI编辑助手', 'aiEditor', 'jimu-bianjiqi', 1, 'components/tool-components/aiEditor/AiEditor',
+        'DefaultBtn', '',
+        '', '/app/aiEditor', 'AI编辑助手', 1);
+
+-- 初始化root权限工具
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
 values (1, 1, 1, 1);
 
@@ -221,10 +227,14 @@ values (3, 3, 1, 1);
 
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
 values (4, 4, 1, 1);
+
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
 values (5, 5, 1, 1);
 
+insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
+values (6, 6, 1, 1);
 
+-- 给 root 用户进行授权
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
 values (1, 1, 1, 1, 1);
 
@@ -242,6 +252,9 @@ values (5, 1, 1, 1, 4);
 
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
 values (6, 1, 1, 1, 5);
+
+insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
+values (7, 1, 1, 1, 6);
 
 
 -- 初始化模型数据
@@ -280,5 +293,8 @@ values (7, 7, 1, 'nomic-embed-text', 'nomic-embed-text',
 -- 初始化 ollama 配置项
 insert into app_setting(id, pid, user_id, name, value, tool_id)
 VALUES (1, '', 0, '账号设置', 'UserInfoSetting', 0);
-insert into app_setting(id, pid, user_id, name, value, tool_id,setting)
-VALUES (2, '', 1, 'Ollama', 'OllamaSetting', 2,'{"host": "http://localhost:11434", "ollamaModel": ""}')
+insert into app_setting(id, pid, user_id, name, value, tool_id, setting)
+VALUES (2, '', 1, 'Ollama', 'OllamaSetting', 2, '{
+  "host": "http://localhost:11434",
+  "ollamaModel": ""
+}')
