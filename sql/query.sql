@@ -1,13 +1,6 @@
 select *
 from app_user;
 
--- 查询 指定用户的指定角色的菜单权限
-select m.*
-from app_org_user_role_menu_auth ourma
-         left join app_menu m on (ourma.menu_id = m.id)
-where ourma.user_id = '1'
-  and ourma.role_id = '1'
-order by sort;
 
 select m.*
 from app_org_user_role_tool_auth ourma
@@ -28,7 +21,7 @@ from app_org_user ou
          left join app_org_user_role our on (ou.org_id = our.org_id and ou.user_id = our.user_id)
          left join app_role r on our.role_id = r.id
 where ou.user_id = '1'
-  and ou.org_id = '1'
+  and ou.org_id = '1';
 
 select app_org.*
 from app_org_user
@@ -65,12 +58,6 @@ from app_org_user ou
 where ou.user_id = '2'
   and ou.org_id = '1';
 
-
-select arra.router_id
-from app_org_role aor
-         left join app_role_router_auth arra on aor.role_id = arra.role_id
-where org_id = '1'
-  and aor.role_id = '1';
 
 
 select arra.tool_id
@@ -110,12 +97,18 @@ where org_id = '1'
 select ar.*
 from app_tool at
          left join app_router ar on at.id = ar.tool_id
-where tool_id='1' and pid='';
+where tool_id = '1'
+  and pid = '';
 
 select ar.*
 from app_tool at
          left join app_router ar on at.id = ar.tool_id
-where tool_id='1' and pid='' limit 10 offset 0;
+where tool_id = '1'
+  and pid = ''
+limit 10 offset 0;
 
 
-select * from app_chat_conversation
+-- 查询用户所在组织的 所有角色
+select * from app_org_user_role where user_id='1';
+
+select distinct(tool_id) from app_org_user_role_tool_auth where user_id='1' and org_id='1' and role_id in ('1')

@@ -131,7 +131,7 @@ insert into app_router(id, pid, title, icon, name, component, path, status, tool
 values (9, 8, '模型管理', 'jimu-moxingguanli', 'model',
         'components/tool-components/chatGptTool/manage/ModelManagePage', '/app/manage/model', true, 1, 9);
 
--- 初始化 root 角色的菜单权限
+-- 初始化 根组织 超级管理员的角色的菜单权限
 insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
 values (1, 1, 1, 1, 1);
 
@@ -160,7 +160,7 @@ insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
 values (9, 9, 1, 1, 1);
 
 
--- 初始化 root 用户的 root 角色的菜单权限授权
+-- 初始化 根组织 root 用户 的菜单权限授权
 insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
 values (1, 1, 1, 1, 1, 1);
 
@@ -215,7 +215,7 @@ VALUES (6, 'AI编辑助手', 'aiEditor', 'jimu-bianjiqi', 1, 'components/tool-co
         'DefaultBtn', '',
         '', '/app/aiEditor', 'AI编辑助手', 1);
 
--- 初始化root权限工具
+-- 初始化 根组织的 超级管理员角色 权限工具
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
 values (1, 1, 1, 1);
 
@@ -234,7 +234,11 @@ values (5, 5, 1, 1);
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
 values (6, 6, 1, 1);
 
--- 给 root 用户进行授权
+-- 临时添加(根据业务情况可删除) 添加普通用户的 GPT 权限
+insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
+values (7, 2, 3, 1);
+
+-- 给 根组织 root 用户进行授权 所有工具权限
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
 values (1, 1, 1, 1, 1);
 
@@ -245,16 +249,13 @@ insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
 values (3, 1, 1, 1, 3);
 
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
-values (4, 1, 1, 2, 2);
+values (4, 1, 1, 1, 4);
 
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
-values (5, 1, 1, 1, 4);
+values (5, 1, 1, 1, 5);
 
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
-values (6, 1, 1, 1, 5);
-
-insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
-values (7, 1, 1, 1, 6);
+values (6, 1, 1, 1, 6);
 
 
 -- 初始化模型数据
