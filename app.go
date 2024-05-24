@@ -12,6 +12,9 @@ import (
 	_ "github.com/jimu-server/org"
 	_ "github.com/jimu-server/oss"
 	_ "github.com/jimu-server/pay"
+
+	_ "swagger-doc"
+
 	"go.uber.org/zap"
 	"net/http"
 	"os"
