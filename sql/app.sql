@@ -55,6 +55,7 @@ create table if not exists app_user
     picture     varchar(500) not null default '',
     gender      int          not null default 0,
     age         int          not null default 0,
+    status      boolean      not null default true,
     create_time timestamp(0)          default now() not null
 );
 create index user_account_key on app_user (account);
@@ -95,6 +96,7 @@ create table app_role
     id          varchar(30) primary key,
     name        varchar(30),
     role_key    varchar(50)  not null,
+    status      boolean      not null default true,
     create_time timestamp(0) not null default now()
 );
 
@@ -166,6 +168,7 @@ create table app_tool
     pull        varchar(100) not null,
     path        varchar(200) not null,
     tip         varchar(100) not null,
+    status      boolean      not null default true,
     position    int          not null
 );
 comment on table app_tool is '周边工具栏表';
@@ -238,6 +241,7 @@ create table app_org_role_router_auth
     role_id     varchar(30)  not null,
     tool_id     varchar(30)  not null,
     router_id   varchar(30)  not null,
+    status      boolean      not null default true,
     create_time timestamp(0) not null default now()
 );
 comment on table app_org_role_router_auth is '角色对应工具栏授权的路由表';
@@ -254,6 +258,7 @@ create table app_org_role_tool_auth
     org_id      varchar(30)  not null,
     role_id     varchar(30)  not null,
     tool_id     varchar(30)  not null,
+    status      boolean      not null default true,
     create_time timestamp(0) not null default now()
 );
 comment on table app_org_role_tool_auth is '角色对应的工具栏授权';
@@ -267,6 +272,7 @@ create table app_org_role_fun_auth
     id          varchar(30) primary key,
     role_id     varchar(30)  not null,
     fun_id      varchar(30)  not null,
+    status      boolean      not null default true,
     create_time timestamp(0) not null default now()
 );
 comment on table app_org_role_fun_auth is '角色对应的功能授权';
@@ -282,6 +288,7 @@ create table app_org_user_role_tool_auth
     role_id     varchar(30)  not null,
     org_id      varchar(30)  not null,
     tool_id     varchar(30)  not null,
+    status      boolean      not null default true,
     create_time timestamp(0) not null default now()
 );
 comment on table app_org_user_role_tool_auth is '组织-用户-角色-工具栏授权表';
@@ -300,6 +307,7 @@ create table app_org_user_role_router_auth
     role_id     varchar(30)  not null,
     tool_id     varchar(30)  not null,
     router_id   varchar(30)  not null,
+    status      boolean      not null default true,
     create_time timestamp(0) not null default now()
 );
 comment on table app_org_user_role_router_auth is '组织-用户-角色-工具栏-路由授权表';
@@ -319,6 +327,7 @@ create table app_org_user_role_fun_auth
     role_id     varchar(30)  not null,
     org_id      varchar(30)  not null,
     fun_id      varchar(30)  not null,
+    status      boolean      not null default true,
     create_time timestamp(0) not null default now()
 );
 
@@ -353,7 +362,7 @@ create table app_chat_conversation
     last_model  varchar(30)           default '',
     last_msg    text                  default '',
     last_time   timestamp(0) not null default now(),
-    delete          int          not null default 0,
+    delete      int          not null default 0,
     create_time timestamp(0) not null default now()
 );
 

@@ -191,7 +191,7 @@ values (9, 1, 1, 1, 1, 9);
 
 -- 初始化工具
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
-VALUES (1, '管理', 'manage', 'jimu-a-xitong3', 2, 'ManageTool', 'DefaultBtn', '', '', '', '管理系统', 1);
+VALUES (1, '后台管理', 'manage', 'jimu-a-xitong3', 2, 'ManageTool', 'DefaultBtn', '', '', '', '后台管理', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (2, 'GPT聊天', 'gpt', 'jimu-ChatGPT', 1, 'components/tool-components/chatGptTool/ChatGPT', 'DefaultBtn',
