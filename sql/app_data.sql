@@ -194,13 +194,12 @@ insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull
 VALUES (1, '后台管理', 'manage', 'jimu-a-xitong3', 2, 'ManageTool', 'DefaultBtn', '', '', '', '后台管理', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
-VALUES (2, 'GPT聊天', 'gpt', 'jimu-ChatGPT', 1, 'components/tool-components/chatGptTool/ChatGPT', 'DefaultBtn',
-        '', '', '/app/gpt', 'AI聊天', 1);
+VALUES (2, 'Ai聊天', 'gpt', 'jimu-icon_zhinengzhushou', 1, 'components/tool-components/chatGptTool/ChatGPT', 'DefaultBtn',
+        '', '', '/app/gpt', 'Ai聊天', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (3, '开发', 'debug', 'jimu-debug-', 1, 'components/system-components/pages/DevPage', 'DefaultBtn', '', '',
-        '/app/dev', '开发调试', 1)
-;
+        '/app/dev', '开发调试', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (4, '通知', 'notify', 'jimu-notify-on', 2, 'NotifyTool', 'NotifyBtn', 'ws://localhost:8080/api/notify',
@@ -211,9 +210,10 @@ VALUES (5, '流程图', 'flow', 'jimu-flow', 1, 'components/tool-components/flow
         '', '/app/flow', '流程图', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
-VALUES (6, 'AI编辑助手', 'aiEditor', 'jimu-bianjiqi', 1, 'components/tool-components/aiEditor/AiEditor',
+VALUES (6, 'office', 'office', 'jimu-bianjiqi', 1, 'components/tool-components/officeTool/OfficeTool',
         'DefaultBtn', '',
-        '', '/app/aiEditor', 'AI编辑助手', 1);
+        '', '/app/office', 'office', 1);
+
 
 -- 初始化 根组织的 超级管理员角色 权限工具
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)

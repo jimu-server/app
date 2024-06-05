@@ -24,9 +24,12 @@ create table app_notify
     sub_id      varchar(30)  not null,
     title       varchar(50)  not null,
     msg_type    int          default 0,
+    type        int          default 0,
     text        varchar(500) not null,
+    param       json         default '{}',
+    template    varchar(500) default 'DefaultNotifyBody',
     status      int          default 0,
-    del         int          default 0,
+    is_delete   int          default 0,
     create_time timestamp(0) default now(),
     update_time timestamp(0) default now()
 );
@@ -35,9 +38,12 @@ comment on column app_notify.pub_id is '生产者';
 comment on column app_notify.sub_id is '消费者';
 comment on column app_notify.title is '消息标题';
 comment on column app_notify.msg_type is '消息类型 1:info 2:success 3:warning 4:error';
+comment on column app_notify.type is '消息类别 0:普通文本消息';
 comment on column app_notify.text is '消息文本';
-comment on column app_notify.status is '消息状态 0:已处理 1:未处理';
-comment on column app_notify.del is '软删除';
+comment on column app_notify.param is '消息上下文参数';
+comment on column app_notify.template is '消息模板组件';
+comment on column app_notify.status is '消息状态 0:未处理 1:已处理';
+comment on column app_notify.is_delete is '是否删除';
 comment on column app_notify.create_time is '创建时间';
 comment on column app_notify.update_time is '处理时间';
 
@@ -196,8 +202,9 @@ create table app_router
     component   varchar(200)          default '',
     path        varchar(100)          default '',
     remark      varchar(500)          default '',
+    router_type int                   default 0,
     status      bool                  default true,
-    sort        int,
+    sort        int                   default 0,
     tool_id     varchar(30)           default 0,
     create_time timestamp(0) not null default now()
 );
@@ -208,6 +215,7 @@ comment on column app_router.icon is '组件图标';
 comment on column app_router.component is '组件名称,组件基于前端根路径的路径信息';
 comment on column app_router.path is '路由路径(注册路由时候的注册路径)';
 comment on column app_router.remark is '备注信息';
+comment on column app_router.router_type is '路由类型 0:菜单树 1:按钮路由';
 comment on column app_router.status is '菜单启用状态 0:未启用 1:启用';
 comment on column app_router.sort is '排序字段';
 comment on column app_router.tool_id is '菜单所属工具栏';
