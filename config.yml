@@ -12,6 +12,7 @@ app:
     maxage: 30
   # 数据库连接协议
   database: host=localhost user=postgres password=Awen*0802^ dbname=postgres port=5432 sslmode=disable TimeZone=Asia/Shanghai
+  fileDb: gpt.db
   # redis
   redis:
     host: localhost
