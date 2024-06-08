@@ -114,4 +114,9 @@ select * from app_org_user_role where user_id='1';
 select distinct(tool_id) from app_org_user_role_tool_auth where user_id='1' and org_id='1' and role_id in ('1')
 
 
-select * from app_notify where sub_id = '1' and is_delete = 0
+select * from app_notify where sub_id = '1' and is_delete = 0;
+
+
+
+
+insert into app_chat_conversation(id, user_id, title)        VALUES ('MTc5ODkxOTQyNTE4NTgxMjQ4MA==', '1', '111')

@@ -35,7 +35,7 @@ VALUES (1, '后台管理', 'manage', 'jimu-a-xitong3', 2, 'ManageTool', 'Default
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
 VALUES (2, 'Ai聊天', 'gpt', 'jimu-icon_zhinengzhushou', 1, 'components/tool-components/chatGptTool/ChatGPT',
-        'DefaultBtn',
+        'GptBtn',
         '', '', '/app/gpt', 'Ai聊天', 1);
 
 insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
@@ -46,9 +46,6 @@ insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull
 VALUES (4, '通知', 'notify', 'jimu-notify-on', 2, 'NotifyTool', 'NotifyBtn', 'ws://localhost:8080/api/notify',
         '/api/notify/pull', '', '通知', 2);
 
-insert into app_tool(id, name, router_name, icon, type, component, btn, ws, pull, path, tip, position)
-VALUES (5, '流程图', 'flow', 'jimu-flow', 1, 'components/tool-components/flowTool/FlowChart', 'DefaultBtn', '',
-        '', '/app/flow', '流程图', 1);
 
 -- 组织角色授权
 drop table if exists app_org_role_tool_auth;
@@ -79,8 +76,6 @@ values (3, 3, 1, 1);
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
 values (4, 4, 1, 1);
 
-insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
-values (5, 5, 1, 1);
 
 -- 临时添加(根据业务情况可删除) 添加普通用户的 GPT 权限
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
@@ -118,6 +113,4 @@ values (3, 1, 1, 1, 3);
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
 values (4, 1, 1, 1, 4);
 
-insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)
-values (5, 1, 1, 1, 5);
 
