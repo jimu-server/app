@@ -132,6 +132,8 @@ github.com/jimu-server/redis v0.0.0-20240512144745-0efabd63c8af h1:xw+n24wLbKPc+
 github.com/jimu-server/redis v0.0.0-20240512144745-0efabd63c8af/go.mod h1:3ZTC6ABZRZD8ncTCNKRtjgW37BqJnkSmCscW8kgXqRI=
 github.com/jimu-server/setting v0.0.0-20240512105036-edcd374c0be6 h1:a/eQseM2H0+1/TrKgXoK1cxafx/HNXvb45IiaoLiBaQ=
 github.com/jimu-server/setting v0.0.0-20240512105036-edcd374c0be6/go.mod h1:+UeDIOi2UMazZVaGbRkFyTq/1DGgQkLNWU14Q003PVc=
+github.com/jimu-server/swagger-doc v0.0.0-20240527005520-00b36d783a26 h1:Lf/b3eeDWybc7TZpmjZQ5fQCHtCqAQrrboKrkZdLC38=
+github.com/jimu-server/swagger-doc v0.0.0-20240527005520-00b36d783a26/go.mod h1:znKFcQ2y6+aZOpfmVrR/gPnpWAVAYST63RIpQg0gAJk=
 github.com/jimu-server/util v0.0.0-20240511141738-75b6ce6dffcb h1:dzoF/f0vSR0gKtlK89Krj4kQZria7/6z/RZgcLpiuLM=
 github.com/jimu-server/util v0.0.0-20240511141738-75b6ce6dffcb/go.mod h1:ybcjG8bDSH8VBc1KJfED+h4J/7dUrmqeaCtXdd3WFRA=
 github.com/jimu-server/web v0.0.0-20240514125731-41f262d870d6 h1:1LNGYV60hRa56m1FFiZqoz3vUmSO9WeGvMh994By8qU=

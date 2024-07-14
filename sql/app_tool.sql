@@ -27,6 +27,7 @@ comment on column app_tool.ws is '消息推送接口';
 comment on column app_tool.pull is '消息拉取接口';
 comment on column app_tool.path is '工具基础路径 工具栏下的所有路由都应该基于此 /{name}';
 comment on column app_tool.tip is '提示语,一般填写工具名称';
+comment on column app_tool.status is '是否禁用，禁用将不能分配给角色';
 comment on column app_tool.position is '工具按钮位置信息 1:左侧 2:右侧';
 
 -- 初始化工具
@@ -62,6 +63,7 @@ comment on table app_org_role_tool_auth is '角色对应的工具栏授权';
 comment on column app_org_role_tool_auth.org_id is '组织id';
 comment on column app_org_role_tool_auth.role_id is '角色id';
 comment on column app_org_role_tool_auth.tool_id is '工具栏id';
+comment on column app_org_role_tool_auth.status is '角色工具权限是否启用，禁用情况下将无法在给用户授权时候展示';
 
 -- 初始化 根组织的 超级管理员角色 权限工具
 insert into app_org_role_tool_auth(id, tool_id, role_id, org_id)
@@ -99,6 +101,7 @@ comment on column app_org_user_role_tool_auth.org_id is '组织id';
 comment on column app_org_user_role_tool_auth.user_id is '用户id';
 comment on column app_org_user_role_tool_auth.role_id is '角色id';
 comment on column app_org_user_role_tool_auth.tool_id is '工具栏id';
+comment on column app_org_user_role_tool_auth.status is '是否禁用，禁用角色资源将无法加载';
 
 -- 给 根组织 root 用户进行授权 所有工具权限
 insert into app_org_user_role_tool_auth(id, user_id, role_id, org_id, tool_id)

@@ -13,10 +13,8 @@ require (
 	github.com/jimu-server/org v0.0.0-20240512105037-f1ca1c6e31c6
 	github.com/jimu-server/oss v0.0.0-20240410083453-20fb81cb5a1a
 	github.com/jimu-server/pay v0.0.0-20240407152935-094bcadba30c
+	github.com/jimu-server/swagger-doc v0.0.0-20240527005520-00b36d783a26
 	github.com/jimu-server/web v0.0.0-20240514125731-41f262d870d6
-	github.com/swaggo/files v1.0.1
-	github.com/swaggo/gin-swagger v1.6.0
-	github.com/swaggo/swag v1.8.12
 	go.uber.org/zap v1.27.0
 )
 
@@ -98,6 +96,9 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.18.2 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
+	github.com/swaggo/files v1.0.1 // indirect
+	github.com/swaggo/gin-swagger v1.6.0 // indirect
+	github.com/swaggo/swag v1.8.12 // indirect
 	github.com/tencentyun/cos-go-sdk-v5 v0.7.47 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.12 // indirect

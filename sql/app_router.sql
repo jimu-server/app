@@ -34,37 +34,27 @@ insert into app_router(id, pid, title, icon, name, component, path, status, tool
 values (1, '', '系统管理', 'jimu-bijibendiannao_laptop-computer-01', '', '', '', true, 1, 1);
 
 insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
-values (2, 1, '账号管理', 'jimu-yonghuguanli1', 'user',
-        'components/system-tool/manageTool/page/UserManagePage', '/app/manage/user', true, 1, 2);
-
-insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
 values (3, 1, '组织管理', 'jimu-zuzhiqunzu', 'org', 'components/system-tool/manageTool/page/OrgManagePage',
         '/app/manage/org', true, 1, 3);
 
 insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
-values (4, '', '系统配置', 'jimu-xitongpeizhi', '', '', '', true, 1, 4);
+values (4, 1, '角色管理', 'jimu-jiaoseguanli', 'org', 'components/system-tool/manageTool/page/RoleManagePage',
+        '/app/manage/org', true, 1, 3);
 
 insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
-values (5, 4, '路由配置', 'jimu-caidan', 'menu', 'components/system-tool/manageTool/page/RouterManagePage',
+values (5, '', '系统配置', 'jimu-xitongpeizhi', '', '', '', true, 1, 4);
+
+insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
+values (6, 5, '路由配置', 'jimu-caidan', 'menu', 'components/system-tool/manageTool/page/RouterManagePage',
         '/app/manage/router', true, 1, 5);
 
 insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
-values (6, 4, '功能配置', 'jimu-gongnengdingyi', 'fun',
-        'components/system-tool/manageTool/page/FunManagePage', '/app/manage/fun', true, 1, 6);
+values (7, 5, '功能配置', 'jimu-gongnengdingyi', 'fun',
+        'components/system-tool/manageTool/page/FunManagePage', '/app/manage/fun', true, 1, 7);
 
 insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
-values (7, 4, '工具配置', 'jimu-tools', 'tool', 'components/system-tool/manageTool/page/ToolManagePage',
-        '/app/manage/tool', true, 1, 7);
-
-insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
-values (8, '', 'AI助手', 'jimu-ChatGPT', '', '', '', true, 1, 8);
-
-insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
-values (9, 8, '聊天AI', 'jimu-zaixianzixun_mian', '', '', '', true, 1, 9);
-
-insert into app_router(id, pid, title, icon, name, component, path, status, tool_id, sort)
-values (10, 8, '生成式AI', 'jimu-shengchengshiAI', '',
-        '', '', true, 1, 10);
+values (8, 5, '工具配置', 'jimu-tools', 'tool', 'components/system-tool/manageTool/page/ToolManagePage',
+        '/app/manage/tool', true, 1, 6);
 
 -- 组织 角色路由授权
 drop table if exists app_org_role_router_auth;
@@ -88,8 +78,6 @@ comment on column app_org_role_router_auth.router_id is '路由id';
 insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
 values (1, 1, 1, 1, 1);
 
-insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
-values (2, 2, 1, 1, 1);
 
 insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
 values (3, 3, 1, 1, 1);
@@ -109,11 +97,6 @@ values (7, 7, 1, 1, 1);
 insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
 values (8, 8, 1, 1, 1);
 
-insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
-values (9, 9, 1, 1, 1);
-
-insert into app_org_role_router_auth(id, router_id, role_id, tool_id, org_id)
-values (10, 10, 1, 1, 1);
 
 -- 组织用户角色授权
 drop table if exists app_org_user_role_router_auth;
@@ -139,8 +122,6 @@ comment on column app_org_user_role_router_auth.router_id is '路由id';
 insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
 values (1, 1, 1, 1, 1, 1);
 
-insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
-values (2, 1, 1, 1, 1, 2);
 
 insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
 values (3, 1, 1, 1, 1, 3);
@@ -160,8 +141,3 @@ values (7, 1, 1, 1, 1, 7);
 insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
 values (8, 1, 1, 1, 1, 8);
 
-insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
-values (9, 1, 1, 1, 1, 9);
-
-insert into app_org_user_role_router_auth(id, user_id, role_id, org_id, tool_id, router_id)
-values (10, 1, 1, 1, 1, 10);
